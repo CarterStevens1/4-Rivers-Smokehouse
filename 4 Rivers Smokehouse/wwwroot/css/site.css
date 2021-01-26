@@ -99,14 +99,15 @@ body {
    
 }
 
-    .nav-item:last-child 
-    {
+.nav-item:last-child {
         border-right: 0;
 
     }
+
 .nav-item:hover {
     color: #fff;
 }
+
 .nav-link, .nav-item, .footer, a.navbar-brand {
     font-family: Courgette;
     color: #90887c; 
@@ -117,17 +118,17 @@ body {
     
 }
 
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: white;
+}
+
 .text-w {
     padding-top: 100px;
     font-weight: bolder;
     color: #fff;
     font-weight: 800;
 }
-.logo {
- 
-    image-resolution: from-image;
-    border: none;
-}
+
 h1 {
     font-size: 10.5em;
     font-family: 'Knockout HTF47-Bantamweight';
@@ -144,67 +145,76 @@ h1 {
     letter-spacing: .10em;
 
 }
-btn::before {
-    content: '';
-    border-radius: 1000px;
-    min-width: calc(300px + 12px);
-    min-height: calc(60px + 12px);
-    border: 6px solid #00FFCB;
-    box-shadow: 0 0 60px rgba(0,255,203,.64);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all .3s ease-in-out 0s;
+
+[class^=btn-] {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 55px;
+    max-width: 250px;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    border: 3px solid currentColor;
 }
 
-.btn:hover, .button:focus {
-    color: #313133;
-    transform: translateY(-6px);
+
+.btn-6 {
+    color: #fff;
+    min-width: 200px;
+    min-height: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    border-color: #fff;
+    background: linear-gradient(90deg, #cd853f) 0%, #cd853f 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    animation-timing-function: ease-in;
 }
 
-btn:hover::before, btn:focus::before {
-    opacity: 1;
-}
-
-btn::after {
-    content: '';
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    border: 6px solid #00FFCB;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring 1.5s infinite;
-}
-
-btn:hover::after, btn:focus::after {
-    animation: none;
-    display: none;
-}
-
-@keyframes ring {
-    0% {
-        width: 30px;
-        height: 30px;
-        opacity: 1;
+    .btn-6 span {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background-color: #2e1e05;
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+        transform: translate(-50%, -50%);
+        z-index: -1;
     }
 
-    100% {
-        width: 300px;
-        height: 300px;
-        opacity: 0;
+    .btn-6:hover {
+        color: #fff;
     }
-}
-.navbar-light:hover .navbar-nav:hover .nav-link:hover {
-    color: white;
-}
+
+        .btn-6:hover span {
+            width: 225%;
+            height: 562.5px;
+        }
+
+    .btn-6:active {
+        background-color: #856404;
+        border-color: #856404;
+    }
+
+
+
 
 .cartlogo {
     height: 35px;
     width:auto;
 }
+
+.logo {
+    image-resolution: from-image;
+    border: none;
+}
+
