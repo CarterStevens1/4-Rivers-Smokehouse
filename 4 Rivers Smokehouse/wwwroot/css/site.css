@@ -59,12 +59,26 @@ html {
   min-height: 100%;
 }
 
+text-white {
+    color: #fff
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.container {
+    min-width: 992px !important;
+}
+
 body {
     /* Margin bottom by footer height */
     margin-bottom:  180px;
     background-image: url(../Images/Brisket_Web.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position:center;
+    height: 100%;
     
     
 }
