@@ -1,0 +1,210 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom:  180px;
+    background-image: url(../Images/Brisket_Web.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+}
+.footer {
+    position: fixed;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    height: 240px;
+    background-image: url(../Images/footerimg.jpg);
+    font-weight: 700;
+    font-size: x-large;
+    border-top: solid #856404;
+    
+}
+
+.center 
+{
+   padding-top: 20%;
+    height: 200px;
+    text-align: center;
+}
+
+
+.nav-item {
+    border-right: 2px solid white;
+    display: inline-block;
+    float: left;
+    padding: 0 15px;
+    
+   
+}
+
+    .nav-item:last-child 
+    {
+        border-right: 0;
+
+    }
+.nav-item:hover {
+    color: #fff;
+}
+.nav-link, .nav-item, .footer, a.navbar-brand {
+    font-family: Courgette;
+    color: #90887c; 
+}
+
+.nav-link {
+    letter-spacing: 0.1em;
+    
+}
+
+.text-w {
+    padding-top: 100px;
+    font-weight: bolder;
+    color: #fff;
+    font-weight: 800;
+}
+.logo {
+ 
+    image-resolution: from-image;
+    border: none;
+}
+h1 {
+    font-size: 10.5em;
+    font-family: 'Knockout HTF47-Bantamweight';
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    color: #fff;
+    text-align:center;
+}
+.midtext {
+    font-size: 2.0em;
+    font-family: 'Knockout HTF47-Bantamweight';
+    letter-spacing: .10em;
+
+}
+btn::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.btn:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+btn:hover::before, btn:focus::before {
+    opacity: 1;
+}
+
+btn::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+btn:hover::after, btn:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+    color: white;
+}
+
+.cartlogo {
+    height: 35px;
+    width:auto;
+}
